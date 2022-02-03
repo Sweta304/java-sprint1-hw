@@ -7,7 +7,7 @@ public class MonthlyReportReader {
 
     HashMap<Integer, HashMap<String, ArrayList<String>>> readMonthlyReports() {
 
-        for(int i=1;i<=12;i++) {
+        for (int i = 1; i <= 12; i++) {
 
             String[] monthlyReportsList; //list of all strings in report
             FileReader readFile = new FileReader();
@@ -21,10 +21,10 @@ public class MonthlyReportReader {
                     itemValues.add(separateValues[1]);
                     itemValues.add(separateValues[2]);
                     itemValues.add(separateValues[3]);
-                    oneMonthReport.put(separateValues[0],itemValues);
+                    oneMonthReport.put(separateValues[0], itemValues);
 
                 }
-                monthlyReports.put(i,oneMonthReport);
+                monthlyReports.put(i, oneMonthReport);
             }
         }
         System.out.println("Все месячные отчеты считаны");
