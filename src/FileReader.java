@@ -4,7 +4,7 @@ import java.nio.file.Path;
 
 public class FileReader {
 
-    String[] readFileContentsOrNull(String path) {
+    public String[] readFileLinesOrNull(String path) {
         try {
             String fileContent = Files.readString(Path.of(path)); //read the file
             String[] reportLines = fileContent.split("\\n"); //split each string and put them into array
