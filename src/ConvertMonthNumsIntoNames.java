@@ -1,42 +1,42 @@
 public class ConvertMonthNumsIntoNames {
-    String monthName (int monthNumber){
-        String monthName=null;
-        switch(monthNumber){
+    public String monthName(int monthNumber) {
+        String monthName = null;
+        switch (monthNumber) {
             case 1:
-                monthName="Январь";
+                monthName = "Январь";
                 break;
             case 2:
-                monthName="Февраль";
+                monthName = "Февраль";
                 break;
             case 3:
-                monthName="Март";
+                monthName = "Март";
                 break;
             case 4:
-                monthName="Апрель";
+                monthName = "Апрель";
                 break;
             case 5:
-                monthName="Май";
+                monthName = "Май";
                 break;
             case 6:
-                monthName="Июнь";
+                monthName = "Июнь";
                 break;
             case 7:
-                monthName="Июль";
+                monthName = "Июль";
                 break;
             case 8:
-                monthName="Август";
+                monthName = "Август";
                 break;
             case 9:
-                monthName="Сентябрь";
+                monthName = "Сентябрь";
                 break;
             case 10:
-                monthName="Октябрь";
+                monthName = "Октябрь";
                 break;
             case 11:
-                monthName="Ноябрь";
+                monthName = "Ноябрь";
                 break;
             case 12:
-                monthName="Декабрь";
+                monthName = "Декабрь";
                 break;
             default:
                 break;
