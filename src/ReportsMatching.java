@@ -24,7 +24,7 @@ public class ReportsMatching {
     private YearlyReportOperations yearlyReportOperations = new YearlyReportOperations();
     private ConvertMonthNumsIntoNames months = new ConvertMonthNumsIntoNames();
 
-    void reportsMatching(int monthQty) {
+    public void reportsMatching(int monthQty) {
         for (int i = 1; i <= monthQty; i++) {
             int expenseFromMonthReport = monthlyReportOperations.commonExpensesByMonth(i, monthlyReports);
             int incomeFromMonthReport = monthlyReportOperations.commonIncomesByMonth(i, monthlyReports);

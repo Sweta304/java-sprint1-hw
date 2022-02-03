@@ -13,7 +13,7 @@ public class YearlyReportReader {
         String[] yearReportsList; //list of all strings in report
         FileReader readFile = new FileReader();
 
-        yearReportsList = readFile.readFileContentsOrNull("resources/y." + year + ".csv");
+        yearReportsList = readFile.readFileLinesOrNull("resources/y." + year + ".csv");
         if (yearReportsList != null) { //if report for this month exists
             for (int j = 1; j < yearReportsList.length; j++) {
                 String[] separateValues = yearReportsList[j].split(",");

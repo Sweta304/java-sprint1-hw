@@ -13,7 +13,7 @@ public class MonthlyReportReader {
             FileReader readFile = new FileReader();
             HashMap<String, ArrayList<String>> oneMonthReport = new HashMap<>();
 
-            monthlyReportsList = readFile.readFileContentsOrNull("resources/m.20210" + i + ".csv"); //read all month reports
+            monthlyReportsList = readFile.readFileLinesOrNull("resources/m.20210" + i + ".csv"); //read all month reports
             if (monthlyReportsList != null) { //if report for this month exists
                 for (int j = 1; j < monthlyReportsList.length; j++) {
                     ArrayList<String> itemValues = new ArrayList<>();
